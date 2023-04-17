@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ListeController">
+   <children>
+      <ListView fx:id="cnsLv" layoutX="14.0" layoutY="65.0" prefHeight="290.0" prefWidth="296.0" />
+
+      <Button layoutX="512.0" layoutY="331.0" mnemonicParsing="false" onAction="#supprimerC" text="Supprimer" />
+      <TextField fx:id="patient_id" layoutX="398.0" layoutY="65.0" promptText="patient id" />
+      <TextField fx:id="typec" layoutX="398.0" layoutY="121.0" promptText="sujet Consultation" />
+      <TextField fx:id="timec" layoutX="398.0" layoutY="255.0" promptText="heure" />
+      <Button layoutX="424.0" layoutY="331.0" mnemonicParsing="false" onAction="#modifierC" text="Modifier" />
+      <Label layoutX="227.0" layoutY="25.0" prefHeight="18.0" prefWidth="165.0" text="Liste des Consultations" />
+      <DatePicker fx:id="datec" layoutX="398.0" layoutY="187.0" promptText="date" />
+      <Button layoutX="347.0" layoutY="331.0" mnemonicParsing="false" onAction="#backtoaddC" text="retour" />
+   </children>
+</AnchorPane>

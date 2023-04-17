@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.addordonnanceController">
+   <children>
+      <Separator layoutX="199.0" layoutY="14.0" orientation="VERTICAL" prefHeight="382.0" prefWidth="0.0" />
+      <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="2.0" layoutY="1.0">
+         <image>
+            <Image url="@../../../../Downloads/326454936_917896406152725_2306321422860661523_n.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="151.0" prefHeight="2.0" prefWidth="601.0" />
+      <TextArea fx:id="description" layoutX="293.0" layoutY="174.0" prefHeight="200.0" prefWidth="200.0" promptText="Rx" />
+      <TextField fx:id="medicament" layoutX="15.0" layoutY="230.0" promptText="medicament" />
+      <DatePicker fx:id="dateo" layoutX="14.0" layoutY="324.0" promptText="date_ordonnance" />
+      <Label layoutX="208.0" layoutY="189.0" prefHeight="34.0" prefWidth="66.0" text="Description" />
+      <Label layoutX="274.0" layoutY="50.0" prefHeight="34.0" prefWidth="211.0" text="Creer une ordonnance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="536.0" layoutY="350.0" mnemonicParsing="false" onAction="#ajouterO" text="Valider" />
+      <Button layoutX="536.0" layoutY="96.0" mnemonicParsing="false" onAction="#afficherO" text="Liste" />
+      <Button layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#main2" text="main" />
+   </children>
+</AnchorPane>

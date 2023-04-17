@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.addConsultationController">
+   <children>
+      <TextField fx:id="typec" layoutX="264.0" layoutY="199.0" />
+      <Label layoutX="33.0" layoutY="116.0" prefHeight="18.0" prefWidth="131.0" text="Choisir le patient" />
+      <TextField fx:id="patient_id" layoutX="264.0" layoutY="112.0" />
+      <DatePicker fx:id="datec" layoutX="164.0" layoutY="277.0" />
+      <Label layoutX="33.0" layoutY="203.0" prefHeight="18.0" prefWidth="131.0" text="Sujet de Consultation" />
+      <Label layoutX="33.0" layoutY="281.0" prefHeight="18.0" prefWidth="131.0" text="Date/Heure" />
+      <TextField fx:id="timec" layoutX="399.0" layoutY="277.0" prefHeight="26.0" prefWidth="106.0" />
+      <Button layoutX="493.0" layoutY="342.0" mnemonicParsing="false" onAction="#ajouterC" text="Ajouter" />
+      <Label layoutX="180.0" layoutY="36.0" prefHeight="28.0" prefWidth="272.0" text="Une nouvelle consultation ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="71.0" layoutY="348.0" mnemonicParsing="false" onAction="#afficherC" text="Afficher" />
+      <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#main" text="main" />
+   </children>
+</AnchorPane>

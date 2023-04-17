@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Home">
+   <children>
+      <Button layoutX="96.0" layoutY="187.0" mnemonicParsing="false" onAction="#GererC" text="Gerer les consultations" />
+      <Button layoutX="351.0" layoutY="187.0" mnemonicParsing="false" onAction="#GererO" text="Gerer les ordonnances" />
+      <Separator layoutX="293.0" layoutY="100.0" orientation="VERTICAL" prefHeight="200.0" />
+   </children>
+</AnchorPane>
